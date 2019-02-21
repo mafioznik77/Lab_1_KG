@@ -34,11 +34,11 @@
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.точечныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.матричныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.инверсияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.матричныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,6 +87,13 @@
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
+            // открытьToolStripMenuItem1
+            // 
+            this.открытьToolStripMenuItem1.Name = "открытьToolStripMenuItem1";
+            this.открытьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.открытьToolStripMenuItem1.Text = "Открыть";
+            this.открытьToolStripMenuItem1.Click += new System.EventHandler(this.открытьToolStripMenuItem1_Click);
+            // 
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -96,13 +103,6 @@
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.открытьToolStripMenuItem.Text = "Фильтры";
             // 
-            // открытьToolStripMenuItem1
-            // 
-            this.открытьToolStripMenuItem1.Name = "открытьToolStripMenuItem1";
-            this.открытьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.открытьToolStripMenuItem1.Text = "Открыть";
-            this.открытьToolStripMenuItem1.Click += new System.EventHandler(this.открытьToolStripMenuItem1_Click);
-            // 
             // точечныеToolStripMenuItem
             // 
             this.точечныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -111,17 +111,18 @@
             this.точечныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точечныеToolStripMenuItem.Text = "Точечные";
             // 
-            // матричныеToolStripMenuItem
-            // 
-            this.матричныеToolStripMenuItem.Name = "матричныеToolStripMenuItem";
-            this.матричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.матричныеToolStripMenuItem.Text = "Матричные";
-            // 
             // инверсияToolStripMenuItem
             // 
             this.инверсияToolStripMenuItem.Name = "инверсияToolStripMenuItem";
             this.инверсияToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.инверсияToolStripMenuItem.Text = "Инверсия";
+            this.инверсияToolStripMenuItem.Click += new System.EventHandler(this.инверсияToolStripMenuItem_Click);
+            // 
+            // матричныеToolStripMenuItem
+            // 
+            this.матричныеToolStripMenuItem.Name = "матричныеToolStripMenuItem";
+            this.матричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.матричныеToolStripMenuItem.Text = "Матричные";
             // 
             // pictureBox1
             // 

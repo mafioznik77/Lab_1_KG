@@ -14,13 +14,13 @@ namespace First
         public Bitmap processImage(Bitmap sourceImage)
         {
             Bitmap resultImage = new Bitmap(sourceImage.Width, sourceImage.Height);
-            for (int i=0;i<sourceImage.Width;i++)
+            for (int i = 0; i < sourceImage.Width; i++)
             {
                 for (int j = 0; j < sourceImage.Height; j++)
                 {
                     resultImage.SetPixel(i, j, calculateNewPixelColor(sourceImage, i, j));
                 }
-            }   
+            }
             return resultImage;
         }
 
@@ -33,10 +33,18 @@ namespace First
                 return max;
             return value;
         }
-
-        protected override Color
-
     }
+        class InvertFilter : Filters
+        {
+            protected override Color calculateNewPixelColor(Bitmap sourceImage, int x, int y)
+            {
+                Color sourceColor = sourceImage.GetPixel(x, y);
+                Color resultColor = Color.FromArgb(255 - sourceColor.R, 255 - sourceColor.B, 255 - sourceColor.B);
+                return resultColor;
+            }
+        }
+
+    
 
     
 }
